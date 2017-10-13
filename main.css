@@ -1,0 +1,72 @@
+/*font-family: 'Fascinate Inline', cursive;
+font-family: 'Open Sans Condensed', sans-serif; */
+
+/* Keyframes crea un tipo de animación en donde el
+color irá de teal a gris */
+@keyframes example {
+    from {background-color: teal;}
+    to {background-color: #F8F5F5;}
+}
+
+
+
+body {
+	width: 90%;
+	text-align: center;
+	margin-top: 0;
+}
+
+h1, h2 {
+	font-family: "Fascinate Inline", cursive;
+	color: teal;
+}
+
+main {
+	font-family: "Open Sans Condensed", sans-serif;
+	width: 50%;
+	text-align: justify;
+	display: inline-block;
+	background-color: white;
+}
+
+
+.sidebar {
+	background-color: #F8F5F5;
+	height: 100%;
+	width: 30%;
+	display: inline-block;
+	position: fixed;
+	vertical-align: top;
+	margin-top: 0px;
+	margin-left: 30px;
+	text-align: left;
+	overflow-x: hidden;
+	/* En Animation-Name llamo a la animación que
+	determiné antes, determino su duración, cuanto
+	tiempo debería repetirse y finalmente la dirección
+	en la que irá la animación */
+	animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+/*margin: auto; para que la imagen quede centrada*/
+.sidebar img {
+	display: block;
+	margin: auto;
+}
+
+.sidebar .text {
+	font-family: "Open Sans Condensed", sans-serif;
+	padding: 30px;
+
+}
+
+table, th, td {
+	font-family: "Open Sans Condensed", sans-serif;
+	border: 1px solid black;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
